@@ -1,0 +1,38 @@
+---
+title: "Exercise 3, STAT3255"
+author: "Jack Bienvenue"
+date: "2024-09-17"
+output:
+    html: default
+    PDF: default
+---
+
+# Obstacles and Solutions:
+
+### Ensuring Correct Upstream
+#### Problem
+I encountered the issue that I made mistakenly set the parent repository as my upstream. This made me encounter a 403b access error every time I proposed a push.
+
+#### Solution
+
+In terminal, I was able to solve this using:
+
+``` {terminal}
+% git remote add origin https://github.com/statds/ids-f24.git
+```
+
+### Opening book for html
+#### Problem
+When you use the following,
+``` {terminal}
+% quarto render
+```
+
+it may not be immediately obvious how to open the course page. This can be solved easily.
+
+#### Solution
+Open the book using:
+
+``` {terminal}
+% open _book/index.html
+```
